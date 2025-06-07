@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="template" xml:space="preserve">
+    <t t-name="CustomPartnerSearchBar" owl="1">
+        <div class="customer-search-buttons">
+            <input t-ref="search-word-input-partner" placeholder="Search Customers..."
+                   size="1"
+                   class="search-input" />
+            <i class="fa fa-search search-icon" t-on-click="_onPressEnterKey"/>
+            <i class="fa fa-times clear-icon" t-on-click="_clearSearch"/>
+
+            <button t-on-click="createNewCustomer" class="btn-create-customer">
+                <i class="fa fa-plus"/>  Create New Customer</button>
+        </div>
+    </t>
+</templates>

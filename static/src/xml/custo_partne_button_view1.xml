@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="CustomPartnerSearchBar" owl="1">
+        <div class="control-button" style="padding: 4px;">
+            <input t-ref="search-word-input-partner" type="text" placeholder="Search/Create Customer" class="form-control mb-1"/>
+            <button class="btn btn-primary btn-sm" t-on-click="updatePartnerList">Search</button>
+            <button class="btn btn-success btn-sm" t-on-click="createNewCustomer">Create</button>
+            <button class="btn btn-secondary btn-sm" t-on-click="_clearSearch">Clear</button>
+        </div>
+    </t>
+</templates>

@@ -1,0 +1,12 @@
+<odoo>
+    <template id="assets_backend" inherit_id="point_of_sale.assets">
+        <xpath expr="." position="inside">
+            <script type="module" src="/custom_pos_partner_search/static/src/js/partner_search.js"/>
+            <template id="partner_search_template" inherit_id="point_of_sale.app">
+                <xpath expr="." position="inside">
+                    <t t-call="custom_pos_partner_search.partner_search_template"/>
+                </xpath>
+            </template>
+        </xpath>
+    </template>
+</odoo>
